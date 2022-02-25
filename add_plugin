@@ -1,0 +1,6 @@
+#!/bin/sh
+
+PLUGIN_NAME=$(echo $1 | cut -d "/" -f 2)
+if [ ! -d "/root/.local/share/nvim/site/pack/packer/start/$PLUGIN_NAME" ]; then 
+    git clone "https://github.com/$1.git" "/root/.local/share/nvim/site/pack/packer/start/$PLUGIN_NAME"
+fi
