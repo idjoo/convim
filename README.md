@@ -1,4 +1,8 @@
-# Usage
+# convim
+
+a containerized neovim with my configuration
+
+## Usage
 
 ```
 docker run -it --rm \
